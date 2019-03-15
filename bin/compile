@@ -21,7 +21,7 @@ echo "-----> JVM ${jvmpath}"
 
 echo "-----> Finding boot.sh"
 bootpath=$(find /tmp -name boot.sh)
-echo "-----> JVM ${bootpath}"
+echo "-----> Boot.sh ${bootpath}"
 
 
 echo "-----> Installing JVM"
@@ -43,9 +43,6 @@ ls -l ${env_dir}
 
 echo "-----> PWD Dir listing = "
 ls -l 
-
-echo "-----> Find Boot.sh = "
-find / -name boot.sh
 
 # put an env script to set java in the path
 
