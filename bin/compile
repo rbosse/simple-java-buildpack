@@ -12,14 +12,24 @@ env_dir=$3
 
 echo "-----> Build Dir is " ${build_dir}
 echo "-----> Cache Dir is " ${cache_dir}
-echo "-----> Cache Dir is " ${env_dir}
+echo "-----> Env Dir is " ${env_dir}
+echo "-----> PWD is $(pwd)" 
+
 
 echo "-----> Installing JVM"
 tar -xf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
 
 # Modify to put the path stuff in the .profile directory.  Put a .sh in there and it should run
-echo "-----> BuildDir listing = "
+echo "-----> Build Dir listing = "
 ls -l ${build_dir}
+
+echo "-----> Cache Dir listing = "
+ls -l ${cache_dir}
+
+echo "-----> Env Dir listing = "
+ls -l ${env_dir}
+
+
 # put an env script to set java in the path
 
 # echo export PATH=$PATH:/app/jre1.8.0_91/bin:/app > ${build_dir}/.profile.d/javaenv.sh
