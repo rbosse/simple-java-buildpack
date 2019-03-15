@@ -16,11 +16,11 @@ echo "-----> Env Dir is " ${env_dir}
 echo "-----> PWD is $(pwd)" 
 
 echo "-----> Finding JVM"
-path=$(find / -name jre-8u91-linux-x64.tar.gz)
-echo "-----> JVM ${path}"
+jvmpath=$(find /tmp -name jre-8u91-linux-x64.tar.gz)
+echo "-----> JVM ${jvmpath}"
 
 echo "-----> Installing JVM"
-tar -xf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
+tar -xf jvmpath -C ${build_dir}
 
 # Modify to put the path stuff in the .profile directory.  Put a .sh in there and it should run
 echo "-----> Build Dir listing = "
