@@ -42,7 +42,7 @@ echo "-----> Env Dir listing = "
 ls -l ${env_dir}
 
 echo "-----> PWD Dir listing = "
-ls -l 
+find .
 
 # put an env script to set java in the path
 
