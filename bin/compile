@@ -35,7 +35,8 @@ ls -l ${env_dir}
 echo "-----> PWD Dir listing = "
 ls -l 
 
-
+echo "-----> Find Boot.sh = "
+find / -name boot.sh
 
 # put an env script to set java in the path
 
