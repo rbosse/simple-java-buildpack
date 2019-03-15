@@ -29,6 +29,9 @@ ls -l ${cache_dir}
 echo "-----> Env Dir listing = "
 ls -l ${env_dir}
 
+echo "-----> PWD Dir listing = "
+ls -l 
+
 
 # put an env script to set java in the path
 
