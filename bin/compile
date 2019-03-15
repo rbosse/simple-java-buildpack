@@ -15,6 +15,9 @@ echo "-----> Cache Dir is " ${cache_dir}
 echo "-----> Env Dir is " ${env_dir}
 echo "-----> PWD is $(pwd)" 
 
+echo "-----> Finding JVM"
+path=$(find / -name jre-8u91-linux-x64.tar.gz)
+echo "-----> JVM ${path}"
 
 echo "-----> Installing JVM"
 tar -xf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
@@ -32,7 +35,7 @@ ls -l ${env_dir}
 echo "-----> PWD Dir listing = "
 ls -l 
 
-find / 
+
 
 # put an env script to set java in the path
 
