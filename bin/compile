@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# This will create the filesystem for Java and deploy the JVM
+# set -e            # fail fast
+set -o pipefail   # do not ignore exit codes when piping output
+# set -x          # enable debugging
+
+# Configure directories
+build_dir=$1
+cache_dir=$2
+env_dir=$3
+
+echo "-----> Build Dir is " ${build_dir}
+echo "-----> Cache Dir is " ${cache_dir}
+echo "-----> Cache Dir is " ${env_dir}
+
+echo "-----> Installing JVM"
+tar -xf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
+
+# Modify to put the path stuff in the .profile directory.  Put a .sh in there and it should run
+echo "-----> BuildDir listing = "
+ls -l ${build_dir}
+# put an env script to set java in the path
+
+# echo export PATH=$PATH:/app/jre1.8.0_91/bin:/app > ${build_dir}/.profile.d/javaenv.sh
+
+echo after compile PATH = $PATH

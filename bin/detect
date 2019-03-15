@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+echo "Detect Exiting with a 0 since every detect should be a success... for now"
+exit 0
