@@ -19,4 +19,4 @@ echo "-----> java location = "
 find . -name java
 
 echo "-----> find jar = "
-find . -name "*.jar"
+find . -maxdepth 1  -name "*.jar"
