@@ -11,3 +11,6 @@ pwd
 
 echo "-----> java -version = "
 java -version
+
+echo "-----> java location = "
+find . -name java
