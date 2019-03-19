@@ -2,6 +2,6 @@
 # bin/release <build-dir>
 
 
-#echo -e "---\ndefault_process_types:\n  web: sh boot.sh"
+echo -e "---\ndefault_process_types:\n  web: sh boot.sh"
 #  default_process_types:
 #    web: commandLine
