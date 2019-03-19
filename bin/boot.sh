@@ -17,3 +17,6 @@ java -version
 
 echo "-----> java location = "
 find . -name java
+
+echo "-----> find jar = "
+find . -name "*.jar"
