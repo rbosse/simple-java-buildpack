@@ -2,8 +2,11 @@ echo "The Mini Java Buildpack is executing! "
 export PATH=$PATH:/home/vcap/app/jre/bin
 
 
-echo "-----> All files from . = "
-find .
+#echo "-----> All files from . = "
+#find .
+
+echo "-----> LS . = "
+ls
 
 
 echo "-----> PWD = "
