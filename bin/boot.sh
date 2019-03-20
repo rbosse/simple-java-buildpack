@@ -22,4 +22,6 @@ echo "-----> find jar = "
 find . -maxdepth 1  -name "*.jar"
 
 echo "-----> starting all jars "
-find . -maxdepth 1  -name "*.jar" -exec java -jar {} \& \;
+#find . -maxdepth 1  -name "*.jar" -exec java -jar {} \& \;
+java -jar app1.jar --server.context-path=/ --server.port=8080 &
+java -jar app2.jar --server.context-path=/ --server.port=8081 &
