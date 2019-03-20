@@ -29,7 +29,7 @@ tar -xf ${jvmpath} -C ${build_dir}
 
 echo "-----> Installing boot.sh"
 cp ${bootpath} ${build_dir}
-
+ln -s /home/vcap/app/jre/bin/java ${build_dir}/java
 
 # Modify to put the path stuff in the .profile directory.  Put a .sh in there and it should run
 echo "-----> Build Dir listing = "
