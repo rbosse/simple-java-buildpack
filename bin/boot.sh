@@ -23,8 +23,8 @@ find . -maxdepth 1  -name "*.jar"
 
 echo "-----> starting all jars "
 #find . -maxdepth 1  -name "*.jar" -exec java -jar {} \& \;
-java -Xmx1024m -jar app1.jar --server.context-path=/ --server.port=8081 &
-sleep 10
-java -Xmx1024m -jar app2.jar --server.context-path=/ --server.port=8082 &
-sleep 10
+#java -Xmx1024m -jar app1.jar --server.context-path=/ --server.port=8081 &
+#sleep 10
+#java -Xmx1024m -jar app2.jar --server.context-path=/ --server.port=8082 &
+#sleep 10
 java -Xmx1024m -jar gateway.jar --server.context-path=/ --server.port=8080 &
