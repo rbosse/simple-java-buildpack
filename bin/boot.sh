@@ -27,4 +27,4 @@ echo "-----> starting all jars "
 #sleep 10
 #java -Xmx1024m -jar app2.jar --server.context-path=/ --server.port=8082 &
 #sleep 10
-java -Xmx1024m -jar gateway.jar --server.context-path=/ --server.port=8080 &
+#java -Xmx1024m -jar gateway.jar --server.context-path=/ --server.port=8080 &
