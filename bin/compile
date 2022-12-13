@@ -16,7 +16,7 @@ echo "-----> Env Dir is " ${env_dir}
 echo "-----> PWD is $(pwd)" 
 
 echo "-----> Finding JVM"
-jvmpath=$(find /tmp -name jre-8u91-linux-x64.tar.gz)
+jvmpath=$(find /tmp -name rh-java-11-openjdk-11.0.17.0.8-2.portable.jre.el.x86_64.tar.gz)
 echo "-----> JVM ${jvmpath}"
 
 echo "-----> Finding boot.sh"
